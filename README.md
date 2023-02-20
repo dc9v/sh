@@ -5,15 +5,6 @@
 
 openvpn 설정에 대한 문서입니다.
 
-## 설치하기
-
-아래 명령으로 설치하거나 [install-openvpn.sh](#shellscript-install-openvpn-sh) 스크립트를 사용해서 설치하세요.
-
-```sh
-sudo update
-sudo apt install openvpn easy-rsa
-```
-
 ## Template
 
 *template/vars.sample*
