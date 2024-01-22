@@ -1,23 +1,5 @@
 #!/bin/bash
 
-echo "아직 완성하지 않았습니다"
-echo "Not finished yet!"
-exit
-
-# DISCLAIMER
-#
-# This script automatically backup current setting files
-
-# OpenVPN Server key generator.
-#
-#   This script This script can be used to generates keys for OpenVPN clients.
-#   Also generates .ovpn file so that it can be publish to clients.
-
-# Required
-#
-#   - OpenVPN/easy-rsa https://github.com/OpenVPN/easy-rsa
-#
-
 OPENVPN_PATH=/etc/openvpn
 EASYRSA_PATH=$OPENVPN_PATH/easy-rsa
 BACKUP_DIR=.backup
@@ -26,7 +8,7 @@ BACKUP_NAME=$(date +%Y)$(date +%m)$(date +%d)$(date +%H)$(date +%M)$(date +%S)
 if [ -z "$1" ]
 then
     echo
-    echo "Useage: ./install-easy-rsa-and-generate-server-key [servername or domain]"
+    echo "Useage: ./install.sh [servername or domain]"
     echo ; echo
     exit
 fi

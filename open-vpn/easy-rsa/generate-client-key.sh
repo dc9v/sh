@@ -1,14 +1,5 @@
 #!/bin/bash
 
-# OpenVPN Client key generator.
-#
-# This script This script can be used to generates keys for OpenVPN clients.
-# Also generates .ovpn file so that it can be publish to clients.
-
-# Required
-#
-# - OpenVPN/easy-rsa https://github.com/OpenVPN/easy-rsa
-
 OPENVPN_PATH=/etc/openvpn
 CLIENT_KEY_STORE=$OPENVPN_PATH/client/keys
 EASYRSA_PATH=$OPENVPN_PATH/easy-rsa
